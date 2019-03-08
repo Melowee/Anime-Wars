@@ -1,0 +1,65 @@
+@startuml Jeu
+
+class Fight
+class BattleField
+class Field
+class Character
+
+abstract Skill
+abstract Effect
+
+class InflictDamage
+class Heal
+class InflictStatusAlteration
+abstract StatusAlteration
+class ConcreteAlteration
+
+Fight <-- BattleField
+BattleField <-- Field
+Field <-- Character
+Character <-- Skill
+Skill <|-- Effect
+Effect <|-- InflictDamage
+Effect <|-- Heal
+Effect <|-- InflictStatusAlteration
+InflictStatusAlteration <-- StatusAlteration
+StatusAlteration <|-- ConcreteAlteration
+
+Fight : BattleField battleField
+
+BattleField : Field allyField
+BattleField : Field ennemyField
+
+Field : Character character1
+Field : Character character2
+Field : Character character3
+Field : Character character4
+
+Character : int atk
+Character : int hp
+Character : Skill skill1
+Character : Skill skill2
+Character : Skill skill3
+Character : useSkill1()
+Character : useSkill2()
+Character : useSkill3()
+
+Skill : Skill(BattleField, Character)
+Skill : use(BattleField, Character)
+
+Effect : Skill skill
+Effect : Effect(Skill skill)
+Effect : use(BattleField, Character)
+
+InflictDamage : InflictDamage(int amount, Skill skill)
+InflictDamage : use(BattleField, Character)
+
+Heal : Heal(int amount, Skill skill)
+Heal : use(BattleField, Character)
+
+InflictStatusAlteration : InflictStatusAlteration(StatusAlteration statusAlteration, Skill skill)
+InflictStatusAlteration : use(BattleField, Character)
+
+ConcreteAlteration : getAlteration() ConcreteAlteration
+
+@enduml
