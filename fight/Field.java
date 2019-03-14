@@ -12,4 +12,13 @@ public class Field{
         this.character3 = ch3;
         this.character4 = ch4;
     }
+
+    public String toString(){
+        String ret = "1 : " + this.character1.toString();
+        ret += "\n2 : " + this.character2.toString();
+        ret += "\n3 : " + this.character3.toString();
+        ret += "\n4 : " + this.character4.toString();
+
+        return ret;
+    }
 }
