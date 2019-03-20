@@ -1,3 +1,5 @@
+package game;
+
 import fight.*;
 import fight.Character;
 import fight.effects.InflictDamage;
@@ -11,11 +13,9 @@ public class Main{
         Field field = new Field(ch, ch, ch, ch);
 
         BattleField bf = new BattleField(field, field);
-        
-
-        System.out.println(bf);
 
         Fight fight = new Fight(bf);
-        ch.useSkill1(bf, ch);
+
+        fight.run();
     }
 }

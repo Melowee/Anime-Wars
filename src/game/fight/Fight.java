@@ -6,4 +6,9 @@ public class Fight{
     public Fight(BattleField battleField){
         this.battleField = battleField;
     }
+
+    public void run(){
+        System.out.println(this.battleField.getBattleStatus());
+    }
+
 }

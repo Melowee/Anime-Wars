@@ -1,0 +1,9 @@
+src/game/fight/BattleField.java
+src/game/fight/Character.java
+src/game/fight/Field.java
+src/game/fight/Fight.java
+src/game/fight/Skill.java
+src/game/fight/effects/Effect.java
+src/game/fight/effects/InflictDamage.java
+src/game/fight/BattleStatus.java
+src/game/Main.java

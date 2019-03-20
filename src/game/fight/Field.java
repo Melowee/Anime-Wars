@@ -13,6 +13,13 @@ public class Field{
         this.character4 = ch4;
     }
 
+    public boolean areAllDead(){
+        return (this.character1.isDead() &&
+                this.character2.isDead() &&
+                this.character3.isDead() &&
+                this.character4.isDead());
+    }
+
     public String toString(){
         String ret = "1 : " + this.character1.toString();
         ret += "\n2 : " + this.character2.toString();
