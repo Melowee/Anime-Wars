@@ -8,7 +8,9 @@ public class Fight{
     }
 
     public void run(){
-        System.out.println(this.battleField.getBattleStatus());
+        while (this.battleField.getBattleStatus() == BattlsStatus.PROCESSING){
+            
+        }
     }
 
 }

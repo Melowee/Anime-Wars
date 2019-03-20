@@ -16,6 +16,7 @@ public class Main{
 
         Fight fight = new Fight(bf);
 
+        System.out.println(bf);
         fight.run();
     }
 }

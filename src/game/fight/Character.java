@@ -16,6 +16,7 @@ public class Character{
         this.atk = atk;
         this.hpMAX = hpMAX;
         this.hp = hpMAX;
+
         this.skill1 = skill1;
         this.skill2 = skill2;
         this.skill3 = skill3;
@@ -59,6 +60,6 @@ public class Character{
     }
 
     public String toString(){
-        return this.name;
+        return this.name + " " + this.hp + "/" + this.hpMAX + " HP";
     }
 }
