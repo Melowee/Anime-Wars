@@ -59,6 +59,10 @@ public class Character{
         return this.hp == 0;
     }
 
+    public String getName(){
+        return this.name;
+    }
+
     public String toString(){
         return this.name + " " + this.hp + "/" + this.hpMAX + " HP";
     }

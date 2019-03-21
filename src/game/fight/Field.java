@@ -20,6 +20,11 @@ public class Field{
                 this.character4.isDead());
     }
 
+    public Character getCharacter1(){ return this.character1; }
+    public Character getCharacter2(){ return this.character2; }
+    public Character getCharacter3(){ return this.character3; }
+    public Character getCharacter4(){ return this.character4; }
+
     public String toString(){
         String ret = "1 : " + this.character1.toString();
         ret += "\n2 : " + this.character2.toString();

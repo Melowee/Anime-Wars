@@ -14,6 +14,7 @@ public class InflictDamage extends Effect {
 
     public void use(BattleField battleField, Character firstTarget){
         skill.use(battleField, firstTarget);
-        System.out.println("Haha des dégats" + this.amount);
+        firstTarget.getDamaged(this.amount);
+        System.out.println(firstTarget.getName() + " a subi " + this.amount + " dégats !");
     }
 }

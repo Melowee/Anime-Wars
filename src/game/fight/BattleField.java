@@ -20,6 +20,9 @@ public class BattleField{
         return BattleStatus.PROCESSING;
     }
 
+    public Field getAllyField() { return this.allyField; }
+    public Field getEnnemyField() { return this.ennemyField; }
+
     public String toString(){
         return "Ally field :\n" + this.allyField.toString() + "\nEnnemy Field :\n" + this.ennemyField.toString();
     }
