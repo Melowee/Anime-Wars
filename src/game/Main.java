@@ -1,10 +1,13 @@
 package game;
 
-import fight.*;
-import fight.Character;
-import fight.effects.InflictDamage;
+import game.fight.effects.Skill;
+import game.fight.effects.InflictDamage;
+import game.fight.field.Field;
+import game.fight.character.Character;
+import game.fight.BattleField;
+import game.fight.Fight;
 
-public class Main{
+public class Main {
     public static void main(String[] args){
         Skill skill = new InflictDamage(1, new Skill());
 

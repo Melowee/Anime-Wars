@@ -1,4 +1,6 @@
-package fight;
+package game.fight.field;
+
+import game.fight.character.Character;
 
 public class Field{
     private Character character1;

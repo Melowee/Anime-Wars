@@ -1,8 +1,7 @@
-package fight.effects;
+package game.fight.effects;
 
-import fight.BattleField;
-import fight.Character;
-import fight.Skill;
+import game.fight.BattleField;
+import game.fight.character.Character;
 
 public class InflictDamage extends Effect {
     int amount;

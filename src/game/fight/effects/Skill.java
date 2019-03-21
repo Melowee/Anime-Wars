@@ -1,6 +1,7 @@
-package fight;
+package game.fight.effects;
 
-import fight.effects.Effect;
+import game.fight.BattleField;
+import game.fight.character.Character;
 
 public class Skill {
 
@@ -11,6 +12,6 @@ public class Skill {
     }
 
     public void use(BattleField battleField, Character firstTarget){
-        System.out.println("CompÃ©tence lancÃ©e");
+        System.out.println("Compétence lancée");
     }
 }

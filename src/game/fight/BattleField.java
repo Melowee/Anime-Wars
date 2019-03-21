@@ -1,6 +1,6 @@
-package fight;
+package game.fight;
 
-import game.fight.BattleStatus;
+import game.fight.field.Field;
 
 public class BattleField{
     private Field allyField;

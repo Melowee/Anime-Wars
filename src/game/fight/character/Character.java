@@ -1,4 +1,8 @@
-package fight;
+package game.fight.character;
+
+import game.fight.effects.Skill;
+import game.fight.BattleField;
+import game.fight.character.Character;
 
 public class Character{
     private String name;

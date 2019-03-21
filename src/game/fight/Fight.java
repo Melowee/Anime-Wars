@@ -1,4 +1,4 @@
-package fight;
+package game.fight;
 
 public class Fight{
     private BattleField battleField;
