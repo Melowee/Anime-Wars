@@ -3,15 +3,19 @@ package game.fight.effects;
 import game.fight.BattleField;
 import game.fight.character.Character;
 
-public class Skill {
-
-    public Skill(){
-    }
-
-    public Skill(Skill skill){
-    }
-
-    public void use(BattleField battleField, Character firstTarget){
-        System.out.println("Compétence lancée");
+public abstract class Skill {
+	
+	private String nom;
+	
+	public Skill(String nom) {
+		this.nom = nom;
+	}
+	
+    public abstract void use(BattleField battleField, Character firstTarget);
+    
+    public String getNom() { return this.nom; }
+    
+    public String toString() {
+    	return this.nom;
     }
 }

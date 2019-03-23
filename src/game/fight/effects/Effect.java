@@ -5,12 +5,14 @@ import game.fight.character.Character;
 import game.fight.effects.Skill;
 
 public abstract class Effect extends Skill{
-    protected Skill skill;
+    private Skill skill;
 
     public Effect(Skill skill){
-        super(skill);
+    	super(skill.getNom());
         this.skill = skill;        
     }
 
     public abstract void use(BattleField battleField, Character firstTarget);
+    
+    public Skill getSkill() {return this.skill; }
 }
