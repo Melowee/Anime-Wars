@@ -1,4 +1,4 @@
-package Player;
+package game.fight.player;
 
 import java.util.ArrayList;
 import java.util.Scanner;

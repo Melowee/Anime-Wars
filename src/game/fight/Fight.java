@@ -1,8 +1,8 @@
 package game.fight;
 
-import Player.AbstractPlayer;
 import game.fight.character.Character;
 import game.fight.character.Owner;
+import game.fight.player.AbstractPlayer;
 
 public class Fight{
     private BattleField battleField;

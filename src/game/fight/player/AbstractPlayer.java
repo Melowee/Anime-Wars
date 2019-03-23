@@ -1,4 +1,4 @@
-package Player;
+package game.fight.player;
 
 import game.fight.BattleField;
 import game.fight.character.Character;
