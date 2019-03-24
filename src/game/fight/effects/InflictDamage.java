@@ -4,7 +4,7 @@ import game.fight.BattleField;
 import game.fight.character.Character;
 
 public class InflictDamage extends Effect {
-    int amount;
+    private int amount;
 
     public InflictDamage(int amount, Skill skill){
         super(skill);
@@ -14,6 +14,5 @@ public class InflictDamage extends Effect {
     public void use(BattleField battleField, Character firstTarget){
         this.getSkill().use(battleField, firstTarget);
         firstTarget.getDamaged(this.amount);
-        System.out.println(firstTarget.getName() + " a subi " + this.amount + " dégat(s) !");
     }
 }

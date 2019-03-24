@@ -29,14 +29,22 @@ public class Fight{
     		
     		switch (characterOwner) {
     			case ALLY:
+    				System.out.println("Tour de " + this.activeCharacter.getName() + " allié !");
     				this.allyPlayer.play(this.battleField, this.activeCharacter);
     				break;
     			case ENNEMY:
+    				System.out.println("Tour de " + this.activeCharacter.getName() + " ennemi !");
     				this.ennemyPlayer.play(this.battleField, this.activeCharacter);
     				break;
     		}
     		
     		this.activeCharacter.resetAtb();
+    		
+    		try {
+    			Thread.sleep(3000);
+    		} catch (InterruptedException e) {
+    			e.printStackTrace();
+    		}
     	}
     	
     	System.out.println(this.battleField.getBattleStatus());

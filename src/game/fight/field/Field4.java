@@ -26,10 +26,11 @@ public class Field4 implements Field {
     
     public ArrayList<Character> getAllCharacters(){
     	ArrayList<Character> characters = new ArrayList<Character>();
-    	characters.add(this.character1);
-    	characters.add(this.character2);
-    	characters.add(this.character3);
-    	characters.add(this.character4);
+    	
+    	if (!this.character1.isDead()) characters.add(this.character1);
+    	if (!this.character2.isDead()) characters.add(this.character2);
+    	if (!this.character3.isDead()) characters.add(this.character3);
+    	if (!this.character4.isDead()) characters.add(this.character4);
     	
     	return characters;
     }

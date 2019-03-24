@@ -1,3 +1,3 @@
-# jeu
+# game
 
-Peut-être qu'un jour j'arriverai au bout, mais encore faut-il le commencer :)
+Maybe one day i will finish it but flemme

@@ -8,7 +8,7 @@ public abstract class Effect extends Skill{
     private Skill skill;
 
     public Effect(Skill skill){
-    	super(skill.getNom());
+    	super(skill.getNom(), skill.getSkillType());
         this.skill = skill;        
     }
 

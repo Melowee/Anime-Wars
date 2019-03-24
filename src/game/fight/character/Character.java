@@ -69,6 +69,8 @@ public class Character{
         }else {
             this.hp -= amount;
         }
+        
+        System.out.println(this.name + " a subi " + amount + " dégat(s) !");
     }
 
     public void getHealed(int amount){
@@ -77,6 +79,8 @@ public class Character{
         }else {
             this.hp += amount;
         }
+        
+        System.out.println(this.name + " a récupéré " + amount + " HP !");
     }
 
     public boolean isDead(){
@@ -106,6 +110,10 @@ public class Character{
     public Owner getOwner() { return this.owner; }
 
     public String toString(){
-        return this.name + " " + this.hp + "/" + this.hpMAX + " HP " + this.atb;
+    	if (!this.isDead()) {
+    		return this.name + " " + this.hp + "/" + this.hpMAX + " HP " + this.atb;
+    	} else {
+    		return "DEAD";
+    	}
     }
 }
