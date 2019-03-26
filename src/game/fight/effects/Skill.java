@@ -17,7 +17,7 @@ public class Skill {
 	}
 	
 	public void use(BattleField battleField, Character firstTarget){
-        System.out.println("Compétence lancée");
+        System.out.println("Competence lancee");
     }
 	
 	public String getNom() { return this.nom; }

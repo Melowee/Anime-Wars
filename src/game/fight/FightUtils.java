@@ -14,7 +14,7 @@ public class FightUtils {
 		
 		switch (name) {
 			case "dev":
-				skill1 = new InflictDamage(1, new Skill("Skill incroyable", SkillType.OFFENSIVE));
+				skill1 = new InflictDamage(1, new Skill("Skill exeptionnel", SkillType.OFFENSIVE));
 				skill2 = new InflictDamage(1, new Skill("Skill incroyable", SkillType.OFFENSIVE));
 				skill3 = new InflictDamage(1, new Skill("Skill incroyable", SkillType.OFFENSIVE));
 				

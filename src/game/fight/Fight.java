@@ -29,7 +29,7 @@ public class Fight{
     		
     		switch (characterOwner) {
     			case ALLY:
-    				System.out.println("Tour de " + this.activeCharacter.getName() + " allié !");
+    				System.out.println("Tour de " + this.activeCharacter.getName() + " allie !");
     				this.allyPlayer.play(this.battleField, this.activeCharacter);
     				break;
     			case ENNEMY:

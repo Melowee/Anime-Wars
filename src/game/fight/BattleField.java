@@ -61,6 +61,7 @@ public class BattleField{
     public Field getEnnemyField() { return this.ennemyField; }
 
     public String toString(){
-        return "Ally field :\n" + this.allyField.toString() + "\nEnnemy Field :\n" + this.ennemyField.toString();
+        return "----------------\nAlly field :\n" + this.allyField.toString() +
+        "\n--\nEnnemy Field :\n" + this.ennemyField.toString() + "\n----------------";
     }
 }

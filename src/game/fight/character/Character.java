@@ -70,7 +70,7 @@ public class Character{
             this.hp -= amount;
         }
         
-        System.out.println(this.name + " a subi " + amount + " dégat(s) !");
+        System.out.println(this.name + " a subi " + amount + " degat(s) !");
     }
 
     public void getHealed(int amount){
@@ -80,7 +80,7 @@ public class Character{
             this.hp += amount;
         }
         
-        System.out.println(this.name + " a récupéré " + amount + " HP !");
+        System.out.println(this.name + " a recupere " + amount + " HP !");
     }
 
     public boolean isDead(){
