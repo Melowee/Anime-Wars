@@ -23,7 +23,7 @@ public class Character{
     private Skill skill2;
     private Skill skill3;
 
-    public Character(String name, Owner owner, int atk, int hpMAX, Skill skill1, Skill skill2, Skill skill3){
+    public Character(String name, Owner owner, int hpMAX, int atk, Skill skill1, Skill skill2, Skill skill3){
         this.name = name;
         
         this.owner = owner;

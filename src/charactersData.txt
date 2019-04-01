@@ -1,1 +1,0 @@
-dev_atk=Dev Attack Character|5_5|Woaow_damge:1|Youpi_damage:3|Super_damage:1_damage:1

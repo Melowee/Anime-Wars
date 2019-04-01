@@ -1,0 +1,1 @@
+dev_atk=Dev Attack Character|5_5|Woaow_offensive_damage:1|Youpi_offensive_damage:3|Super_offensive_damage:1_damage:1
