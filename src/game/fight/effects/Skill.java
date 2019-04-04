@@ -16,7 +16,7 @@ public class Skill {
 		this.skillType = skillType;
 	}
 	
-	public void use(BattleField battleField, Character firstTarget){
+	public void use(Character caster, BattleField battleField, Character firstTarget){
         System.out.println("Competence lancee");
     }
 	

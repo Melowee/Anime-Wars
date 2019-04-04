@@ -82,24 +82,7 @@ public class CharactersUtils {
 				);
 	}
 	
-	public static Character getCharacterByName(String name, Owner owner) throws Exception {
-		/*
-		Skill skill1;
-		Skill skill2;
-		Skill skill3;
-		
-		switch (name) {
-			case "dev":
-				skill1 = new InflictDamage(1, new Skill("Skill exeptionnel", SkillType.OFFENSIVE));
-				skill2 = new InflictDamage(1, new Skill("Skill incroyable", SkillType.OFFENSIVE));
-				skill3 = new InflictDamage(1, new Skill("Skill incroyable", SkillType.OFFENSIVE));
-				
-				return new Character("Dev", owner, 5, 5, skill1, skill2, skill3);
-			default:
-				return new Character("Error", owner, 0, 0, null, null, null);
-		}
-		*/
-		
+	public static Character getCharacterByName(String name, Owner owner) throws Exception {		
 		if (CHARACTERS_RULES.containsKey(name)) {
 			return buildCharacter(CHARACTERS_RULES.get(name), owner);
 		} else {

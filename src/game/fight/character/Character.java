@@ -42,13 +42,13 @@ public class Character{
     public boolean useSkill(int number, BattleField battleField, Character firstTarget){
         switch (number) {
             case 1:
-                this.skill1.use(battleField, firstTarget);
+                this.skill1.use(this, battleField, firstTarget);
                 break;
             case 2:
-                this.skill2.use(battleField, firstTarget);
+                this.skill2.use(this, battleField, firstTarget);
                 break;
             case 3:
-                this.skill3.use(battleField, firstTarget);
+                this.skill3.use(this, battleField, firstTarget);
                 break;
             default:
                 return false;

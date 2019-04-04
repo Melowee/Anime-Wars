@@ -11,8 +11,8 @@ public class Heal extends Effect {
 		this.amount = amount;
 	}
 	
-	public void use(BattleField battleField, Character firstTarget) {
-		this.getSkill().use(battleField, firstTarget);
+	public void use(Character caster, BattleField battleField, Character firstTarget) {
+		this.getSkill().use(caster, battleField, firstTarget);
 		firstTarget.getHealed(this.amount);
 	}
 }

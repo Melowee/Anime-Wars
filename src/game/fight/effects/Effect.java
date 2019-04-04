@@ -12,7 +12,7 @@ public abstract class Effect extends Skill{
         this.skill = skill;        
     }
 
-    public abstract void use(BattleField battleField, Character firstTarget);
+    public abstract void use(Character caster, BattleField battleField, Character firstTarget);
     
     public Skill getSkill() {return this.skill; }
 }
