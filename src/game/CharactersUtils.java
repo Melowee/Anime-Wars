@@ -36,10 +36,10 @@ public class CharactersUtils {
 	
 	private static Skill buildSkill(ArrayList<String> skillData) throws Exception {
 		int listSize = skillData.size();
-		if (listSize == 2) {
+		if (listSize == 3) {
 			SkillType skillType;
 			
-			switch (skillData.get(1)) {
+			switch (skillData.get(2)) {
 				case "offensive" :
 					skillType = SkillType.OFFENSIVE;
 					break;
@@ -50,7 +50,7 @@ public class CharactersUtils {
 					throw new Exception("Can't find the skill type " + skillData.get(1));
 			}
 			
-			return new Skill(skillData.get(0), skillType);
+			return new Skill(skillData.get(0), Integer.parseInt(skillData.get(1)), skillType);
 			
 		} else if ( listSize > 2){
 			String[] effectData = skillData.get(skillData.size() -1).split(":");
