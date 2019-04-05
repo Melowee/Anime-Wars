@@ -38,12 +38,12 @@ public class Fight{
     		}
     		
     		this.activeCharacter.endTurn();
-    		/*
+    		
     		try {
     			Thread.sleep(3000);
     		} catch (InterruptedException e) {
     			e.printStackTrace();
-    		}*/
+    		}
     	}
     	
     	System.out.println(this.battleField.getBattleStatus());

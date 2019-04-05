@@ -1,1 +1,2 @@
 dev_atk=Dev Attack Character|5_5|Ceci est un skill qui inflige 1_0_offensive_damage:1|Youpi_1_offensive_damage:3|Super_5_offensive_damage:1_damage:1
+dev_atk_spe=Dev Special Attack|5_5|Degats_0_offensive_damage:2|Degats AOE_2_offensive_aoeDamage:1|Degats Random_1_offensive_randomDamage:1:6

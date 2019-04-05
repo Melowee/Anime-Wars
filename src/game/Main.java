@@ -13,10 +13,10 @@ import game.fight.Fight;
 
 public class Main {
     public static void main(String[] args) throws Exception{
-        Character ch1 = CharactersUtils.getCharacterByName("dev_atk", Owner.ALLY);
-        Character ch2 = CharactersUtils.getCharacterByName("dev_atk", Owner.ALLY);
-        Character ch3 = CharactersUtils.getCharacterByName("dev_atk", Owner.ALLY);
-        Character ch4 = CharactersUtils.getCharacterByName("dev_atk", Owner.ALLY);
+        Character ch1 = CharactersUtils.getCharacterByName("dev_atk_spe", Owner.ALLY);
+        Character ch2 = CharactersUtils.getCharacterByName("dev_atk_spe", Owner.ALLY);
+        Character ch3 = CharactersUtils.getCharacterByName("dev_atk_spe", Owner.ALLY);
+        Character ch4 = CharactersUtils.getCharacterByName("dev_atk_spe", Owner.ALLY);
         
         Character ch5 = CharactersUtils.getCharacterByName("dev_atk", Owner.ENNEMY);
         Character ch6 = CharactersUtils.getCharacterByName("dev_atk", Owner.ENNEMY);

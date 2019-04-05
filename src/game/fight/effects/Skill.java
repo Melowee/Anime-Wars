@@ -33,7 +33,6 @@ public class Skill {
 	
 	public void decreaseCooldown() {
 		if (this.currentCooldown > 0) {
-			System.out.println("jui la");
 			this.currentCooldown--;
 		}
 	}

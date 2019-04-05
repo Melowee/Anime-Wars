@@ -10,7 +10,10 @@ import java.util.Map;
 
 import game.fight.character.Character;
 import game.fight.character.Owner;
+import game.fight.effects.Heal;
+import game.fight.effects.InflictAOEDamage;
 import game.fight.effects.InflictDamage;
+import game.fight.effects.InflictRandomDamage;
 import game.fight.effects.Skill;
 import game.fight.effects.SkillType;
 
@@ -54,10 +57,21 @@ public class CharactersUtils {
 			
 		} else if ( listSize > 2){
 			String[] effectData = skillData.get(skillData.size() -1).split(":");
+			
+			skillData.remove(skillData.size() - 1);
 			switch (effectData[0]) {
 				case "damage" :
-					skillData.remove(skillData.size() - 1);
 					return new InflictDamage(Integer.parseInt(effectData[1]), buildSkill(skillData));
+					
+				case "heal":
+					return new Heal(Integer.parseInt(effectData[1]), buildSkill(skillData));
+					
+				case "aoeDamage":
+					return new InflictAOEDamage(Integer.parseInt(effectData[1]), buildSkill(skillData));
+					
+				case "randomDamage":
+					return new InflictRandomDamage(Integer.parseInt(effectData[1]), Integer.parseInt(effectData[2]), buildSkill(skillData));
+					
 				default:
 					throw new Exception("Undefined effect " + effectData[0]);
 			}
