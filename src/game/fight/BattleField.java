@@ -56,7 +56,7 @@ public class BattleField{
 		
 		return allCharacters;
     }
-    
+        
     public Field getAllyField() { return this.allyField; }
     public Field getEnnemyField() { return this.ennemyField; }
 

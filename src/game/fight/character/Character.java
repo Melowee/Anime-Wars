@@ -91,8 +91,18 @@ public class Character{
     	return this.atb == MAX_ATB;
     }
     
-    public void resetAtb() {
+    public void beginTurn() {
+    	this.decreaseCooldowns();
+    }
+    
+    public void endTurn() {
     	this.atb = 0;
+    }
+    
+    public void decreaseCooldowns() {
+    	this.skill1.decreaseCooldown();
+    	this.skill2.decreaseCooldown();
+    	this.skill3.decreaseCooldown();
     }
     
     public ArrayList<Skill> getAllSkills() {

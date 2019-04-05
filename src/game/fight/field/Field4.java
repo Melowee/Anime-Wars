@@ -34,7 +34,7 @@ public class Field4 implements Field {
     	
     	return characters;
     }
-
+    
     public Character getCharacter1(){ return this.character1; }
     public Character getCharacter2(){ return this.character2; }
     public Character getCharacter3(){ return this.character3; }

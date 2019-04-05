@@ -31,6 +31,13 @@ public class Skill {
         System.out.println("Competence lancee");
     }
 	
+	public void decreaseCooldown() {
+		if (this.currentCooldown > 0) {
+			System.out.println("jui la");
+			this.currentCooldown--;
+		}
+	}
+	
 	public boolean isOnCooldown() {
 		return this.currentCooldown != 0;
 	}
@@ -41,7 +48,7 @@ public class Skill {
 	public SkillType getSkillType() { return this.skillType; }
 	
 	public String toString() {
-		return this.nom + this.currentCooldown + this.maxCooldown;
+		return this.nom + " " + this.currentCooldown;
 	}
 
 }

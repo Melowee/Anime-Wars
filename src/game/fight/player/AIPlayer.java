@@ -20,6 +20,7 @@ public class AIPlayer extends AbstractPlayer {
 			i++;
 		} while (target.getOwner() == Owner.ENNEMY);
 		
+		activeCharacter.decreaseCooldowns();
 		activeCharacter.useSkill(1, battleField, target);
 	}
 }

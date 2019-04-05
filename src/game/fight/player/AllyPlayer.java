@@ -52,6 +52,7 @@ public class AllyPlayer extends AbstractPlayer {
 			}
 		} while (!this.targetIsValid());
 		
+		activeCharacter.decreaseCooldowns();
 		activeCharacter.useSkill(this.currentSkill, battleField, this.characters.get(this.currentTarget-1));
 		
 	}

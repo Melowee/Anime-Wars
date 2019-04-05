@@ -18,6 +18,7 @@ public abstract class Effect extends Skill{
     public boolean isOnCooldown() { return skill.isOnCooldown(); }
     public String getNom() { return skill.getNom(); }
     public SkillType getSkillType() { return skill.getSkillType(); }
+    public void decreaseCooldown() { skill.decreaseCooldown(); }
     
     public Skill getSkill() { return this.skill; }
     

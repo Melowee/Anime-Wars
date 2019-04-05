@@ -19,8 +19,7 @@ public class Fight{
     }
 
     public void run(){
-    	while (this.battleField.getBattleStatus() == BattleStatus.PROCESSING) {
-    		
+    	while (this.battleField.getBattleStatus() == BattleStatus.PROCESSING) {    		
     		this.activeCharacter = this.battleField.getNextActiveCharacter();
     		
     		System.out.println(this.battleField);
@@ -38,13 +37,13 @@ public class Fight{
     				break;
     		}
     		
-    		this.activeCharacter.resetAtb();
-    		
+    		this.activeCharacter.endTurn();
+    		/*
     		try {
     			Thread.sleep(3000);
     		} catch (InterruptedException e) {
     			e.printStackTrace();
-    		}
+    		}*/
     	}
     	
     	System.out.println(this.battleField.getBattleStatus());
